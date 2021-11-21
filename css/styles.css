@@ -127,15 +127,24 @@ img {
     font-size: 14px;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-left: 10px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--header-contacts-color);
+    display: flex;
+    align-items: center;
 }
+
+.header-con-icon {
+    margin-right: 10px;
+}
+
 
 .header-con:hover,
 .header-con:focus,                                      
 .header-con:active {
     color: var(--pseudo-class-color);
+    fill: var(--pseudo-class-color);
 }
 
 .current {
@@ -226,6 +235,17 @@ img {
     display: flex;
 }
 
+.specials-box {
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .specials-list {
     max-width: 270px;
 }
@@ -290,6 +310,10 @@ img {
 
 /*------------------------------------ team page 1----------------------------------  */
 
+.team-sec {
+    background-color: #F5F4FA;
+}
+
 .members {
     
     text-align: center;
@@ -318,6 +342,7 @@ img {
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    margin-bottom: 16px;
 }
 
 .pad-team {
@@ -339,7 +364,92 @@ img {
     display: flex;
 }
 
+.team-icons {
+    display: flex;
+    justify-content: center;
+}
 
+.list-icons {
+    width: 44px;
+    height: 44px;
+}
+
+.list-icons + .list-icons {
+    margin-left: 10px;
+}
+
+.team-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: #AFB1B8;
+}
+
+.team-social-link:hover,
+.team-social-link:focus,
+.team-social-link:active {
+    background-color:#2196F3;
+    color: #FFFFFF;
+}
+
+.icons {
+    fill: currentColor;
+}
+
+.clients {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+}
+
+.clients-box {
+    display: flex;
+    padding: 16px 32px;
+    width: 170px;
+    height: 94px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.clients-box + .clients-box {
+    margin-left: 30px;
+}
+
+
+.clients-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #AFB1B8;
+}
+
+.clients-icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}
+
+.clients-social-link:hover, 
+.clients-social-link:focus,
+.clients-social-link:active {
+    color: #2196F3;
+}
 
 
 
@@ -439,6 +549,15 @@ img {
     border-top: none;
 }
 
+.pad-hover {
+    display: block;
+}
+
+.pad-hover:hover,
+.pad-hover:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .pics {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -463,6 +582,12 @@ img {
     background-color: var(--footer-bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer-flex {
+    display: flex;
+    align-items: baseline;
+    
 }
 
 .footer-logo {
@@ -515,6 +640,51 @@ img {
 .footer-con:focus, 
 .footer-con:active {
     color: var(--pseudo-class-color);
+}
+
+.join-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    
+}
+
+.foot-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-join {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.foot-social-link {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color:rgba(255, 255, 255, 0.1);
+}
+
+.foot-icons {
+    fill: currentColor;
+}
+
+.foot-social-link:hover,
+.foot-social-link:focus,
+.foot-social-link:active {
+    background-color:#2196F3;
 }
 
 
